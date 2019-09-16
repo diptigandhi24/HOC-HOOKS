@@ -1,0 +1,47 @@
+So we have four buttons which on click displays the alert box.
+I started by creating a button component, which returns four buttons
+-----CSS Part------
+There are somestyles which are common and some style which are not.
+1. Common styles: width, height, font-size, border-radius, border-color. 
+2. Uncommon styles: background-color, button text.
+
+To solve this,
+we created "btn" class where we kept all the common styles.
+Then, we created four more classes in button.css
+"btn-primary" "btn-secondary" "btn-success" "btn-warning"
+The reason for creating four classes, if you want to add more styling to any
+particular button then you can add those styling simply in that class.
+e.g btn-success{
+    background-color: green;
+    color:red;
+}
+
+**Note: Its interesting to see how we think about the separation in css.
+How easily we can change the style of one button without affecting other
+
+-----CSS Part------
+
+----- CODE QUALITY TILL NOW--------
+1. Avoid repitation in your code
+2. Keep your code flexible, avoid hardcoding 
+
+
+----- CODE QUALITY TILL NOW--------
+ 
+----QUALITY CHECK---------
+Understand Repitation:
+Creating button is a task,
+We have four buttons, we have wrote the code fourtimes for that
+Understanding what part of that task is common and What part is not common,
+Inside our Button apart from background-color and button-text all otherstyles are same.
+Till now, we have hardcoded button styles.
+Lets make our code flexible, how?
+We will create a button with all the common task and will also let user add the
+style during the creation of button
+We will create a Task, which returns the button
+Whenever we want to create a button we will call this task.
+Task will have all the common-style hardcoded init
+Task will allow user to add style during the creation of button
+and it will return a button as developer wants
+----QUALITY CHECK---------
+
