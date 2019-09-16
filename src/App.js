@@ -5,10 +5,14 @@ import Button from "./Button";
 function App() {
   return (
     <div className="App">
-      <Button btnType="primary" name="Primary button" />
-      <Button btnType="secondary" name="Secondary button" />
-      <Button btnType="success" name="Success button" />
-      <Button btnType="warning" name="Warning button" />
+      <Button btnType="primary" name="Primary button" message="I am Primary" />
+      <Button
+        btnType="secondary"
+        name="Secondary button"
+        message="I am secondary"
+      />
+      <Button btnType="success" name="Success button" message="I am success" />
+      <Button btnType="warning" name="Warning button" message="I am warning" />
     </div>
   );
 }
